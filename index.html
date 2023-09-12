@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Ferramentas</title>
+</head>
+
+    <body>
+
+        <header>
+            <h1 class="registro">Registro de Ferramenta</h1>
+            <p>Preencha as informações para cadastrar uma ferramenta.</p>
+
+            <div>
+                <input type="button" id="login" value="Login" class="submit">
+                <input type="button" id="register" value="Register" class="submit">
+            </div>
+            
+        </header>
+
+        <main>
+
+            <div class="base" id="base">
+                <div class="div-input">
+                    <h2>Código do Produto</h2>
+                    <input type="text" id="codigo" class="Codigo">
+                </div>
+        
+                <div class="div-input">
+                    <h2>Número de Serie</h2>
+                    <input type="text" id="serie" class="Serie">
+                </div>
+        
+                <div class="div-input">
+                    <h2>Nome do Produto</h2>
+                    <input type="text" id="nome" class="Nome">
+                </div>
+        
+                <div class="div-input">
+                    <h2>Descrição</h2>
+                    <textarea class="paragraph" id="desc" rows="5" cols="50"></textarea>
+                </div>
+
+                <div class="div-input">
+                    <h2>Imagem</h2>
+                    <textarea class="paragraph" id="img" rows="5" cols="50"></textarea>
+                </div>
+        
+                <div class="div-btn">
+                    <input type="button" id="confirm" value="CONFIRMAR" class="submit">
+                    <input type="button" id="delet" value="DELETAR" class="submit">
+                    <input type="button" id="edit" value="EDITAR" class="submit">
+                    <input type="button" id="products" value="PRODUTOS" class="submit">
+                </div>
+            </div>
+
+            <div class="disable" id="log">
+
+                <h2>Login</h2>
+
+                <div class="div-input">
+                    <h2>Email</h2>
+                    <input type="text" id="log-email" class="Email">
+                </div>
+
+                <div class="div-input">
+                    <h2>Senha</h2>
+                    <input type="password" id="log-senha" class="Senha">
+                </div>
+
+                <div class="div-btn">
+                    <input type="button" id="confirm-login" value="Login" class="submit">
+                </div>
+
+            </div>
+
+            <div class="disable" id="reg">
+
+                <h2>Register</h2>
+
+                <div class="div-input">
+                    <h2>Email</h2>
+                    <input type="text" id="reg-email" class="Email">
+                </div>
+
+                <div class="div-input">
+                    <h2>Senha</h2>
+                    <input type="password" id="reg-senha" class="Senha">
+                </div>
+
+                <div class="div-btn">
+                    <input type="button" id="confirm-register" value="Registrar" class="submit">
+                </div>
+
+            </div>
+
+            <div id="Produtos" class="disable">
+                <input type="button" id="voltar" value="Voltar" class="submit">
+                <div id="view-ferramentas"></div>
+            </div>
+
+            
+        </main>
+
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
